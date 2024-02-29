@@ -1,0 +1,27 @@
+{
+  "name": "education_platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T1nkov/education_platform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T1nkov/education_platform/issues"
+  },
+  "homepage": "https://github.com/T1nkov/education_platform#readme",
+  "dependencies": {
+    "@types/node": "^20.11.24",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
