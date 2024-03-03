@@ -5,6 +5,7 @@ import {
   createCourse,
   getAllCourse,
   updateCourse,
+  deleteCourse,
 } from "../service/course.service";
 const routeCourse = Router();
 

@@ -34,7 +34,14 @@ async function updateCourseDB(
     client.query("COMMIT");
     return rows;
   } catch (error) {
-      client.query('ROLLBACK')
+    client.query("ROLLBACK");
   }
 }
-export { createCourseDB, getAllCourseDB, updateCourseDB };
+
+async function deleteCourseDB(id: number): Promise<iCourse[]> {
+  const client = await pool.connect();
+  const sql: string = "DELETE FROM course where id = $1 returning *";
+  const { rows } = await client.query(sql, [id]);
+  return rows;
+}
+export { createCourseDB, getAllCourseDB, updateCourseDB, deleteCourseDB };

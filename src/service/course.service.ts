@@ -4,6 +4,7 @@ import {
   createCourseDB,
   getAllCourseDB,
   updateCourseDB,
+  deleteCourseDB,
 } from "../repository/course.repository";
 
 async function createCourse(
@@ -27,4 +28,9 @@ async function updateCourse(
   const data: iCourse[] = await updateCourseDB(id, course, description);
   return data;
 }
-export { createCourse, getAllCourse, updateCourse };
+
+async function deleteCourse(id: number): Promise<iCourse[]> {
+  const data: iCourse[] = await deleteCourseDB(id);
+  return data;
+}
+export { createCourse, getAllCourse, updateCourse, deleteCourse };
