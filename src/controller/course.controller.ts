@@ -49,4 +49,12 @@ routeCourse.delete("/:id", async (req: Request, res: Response) => {
   }
 });
 
+routeCourse.path(":/id", async (req: Request, res: Response) => {
+  try {
+    const body = req.body;
+    const { id } = req.params;
+  } catch (error: any) {
+    res.status(404).send(error.message);
+  }
+});
 export default routeCourse;
