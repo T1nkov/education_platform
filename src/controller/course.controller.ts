@@ -6,6 +6,7 @@ import {
   getAllCourse,
   updateCourse,
   deleteCourse,
+  pathCourse
 } from "../service/course.service";
 const routeCourse = Router();
 
@@ -53,6 +54,7 @@ routeCourse.path(":/id", async (req: Request, res: Response) => {
   try {
     const body = req.body;
     const { id } = req.params;
+    const data: iCourse[] = await pathCourse(id, body);
   } catch (error: any) {
     res.status(404).send(error.message);
   }

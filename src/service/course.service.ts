@@ -33,4 +33,8 @@ async function deleteCourse(id: number): Promise<iCourse[]> {
   const data: iCourse[] = await deleteCourseDB(id);
   return data;
 }
+
+async function pathCourse(id:number, body)Promise<iCourse[]> {
+    
+}
 export { createCourse, getAllCourse, updateCourse, deleteCourse };
