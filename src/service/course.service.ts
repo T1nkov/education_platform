@@ -5,6 +5,7 @@ import {
   getAllCourseDB,
   updateCourseDB,
   deleteCourseDB,
+  pathCourseDB
 } from "../repository/course.repository";
 
 async function createCourse(
@@ -38,4 +39,4 @@ async function pathCourse(id:number, body:any):Promise<iCourse[]> {
     const data: iCourse[] = await pathCourse(id, body)
     return data
 }
-export { createCourse, getAllCourse, updateCourse, deleteCourse };
+export { createCourse, getAllCourse, updateCourse, deleteCourse,pathCourse };

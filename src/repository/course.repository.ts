@@ -44,4 +44,9 @@ async function deleteCourseDB(id: number): Promise<iCourse[]> {
   const { rows } = await client.query(sql, [id]);
   return rows;
 }
+
+async function pathCourseDB(id:number, body:any) {
+    const client = await pool.connect();
+    const sql: string = ''
+}
 export { createCourseDB, getAllCourseDB, updateCourseDB, deleteCourseDB };
