@@ -45,8 +45,33 @@ async function deleteCourseDB(id: number): Promise<iCourse[]> {
   return rows;
 }
 
-async function pathCourseDB(id:number, body:any) {
-    const client = await pool.connect();
-    const sql: string = ''
+async function pathCourseDB(id: number, body: any) {
+  const client = await pool.connect();
+
+  try {
+    await client.query("BEGIN");
+    const queryCourseOld: string =
+      "SELECT * FROM course when id = $1 RETURNING *";
+    const { rows: old } = await client.query(queryCourseOld, [id]);
+    const pathCourse = { ...old, body };
+    const queryCourse: string =
+      "update users set course = $2, description = $3, where id = $1 returning *";
+    const { rows: pathRows } = await client.query(queryCourse, [
+      pathCourse.id,
+      pathCourse.course,
+      pathCourse.description,
+    ]);
+    await client.query("commit");
+    return pathRows;
+  } catch (error: any) {
+    await client.query("ROLLBACK");
+    return [];
+  }
 }
-export { createCourseDB, getAllCourseDB, updateCourseDB, deleteCourseDB };
+export {
+  createCourseDB,
+  getAllCourseDB,
+  updateCourseDB,
+  deleteCourseDB,
+  pathCourseDB,
+};
