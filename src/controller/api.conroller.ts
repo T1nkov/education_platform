@@ -20,7 +20,7 @@ route.post("/auth", async (req: Request, res: Response) => {
     const { email, pwd } = req.body;
     const data: iUser[] = await authorizUser(email, pwd);
     const token: string = createToken(data);
-    res.status(200).send(data);
+    res.status(200).send(token);
   } catch (error: any) {
     res.status(400).send(error.message);
   }
