@@ -6,4 +6,7 @@ describe('create user', ()=>{
     test('correct', async ()=>{
         const mock = jest.spyOn()
     })
+    test('uncorrect', async ()=>{
+        const mock = jest.spyOn()
+    })
 })
