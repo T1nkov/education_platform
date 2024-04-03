@@ -6,7 +6,7 @@ function Home() {
       <div className={style.header}>
         <p className={style.logo}>Hschool</p>
         <div className={style.buttons}>
-          <div className={style.login}>Login →</div>
+          <div className={style.login} >Login →</div>
           <div className={style.signup}>Sign Up</div>
         </div>
       </div>
@@ -21,7 +21,7 @@ function Home() {
           <div className={style.button}>About platform</div>
           <div> 
               <div>600+</div>
-              <p></p>
+              <p>Students</p>
           </div>
         </div>
       </div>
