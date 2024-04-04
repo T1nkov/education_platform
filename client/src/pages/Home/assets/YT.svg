@@ -1,0 +1,14 @@
+<svg width="30.000000" height="24.000000" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip12_131">
+			<rect id="Frame 31" width="30.000000" height="24.000000" transform="translate(-0.952393 -0.988281)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Frame 31" width="30.000000" height="24.000000" transform="translate(-0.952393 -0.988281)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip12_131)">
+		<path id="youtube" d="M23.77 2.69C24.87 3.01 25.65 3.79 25.97 4.89C26.59 6.93 26.59 11.01 26.59 11.01C26.59 11.01 26.59 15.09 26.12 17.13C25.81 18.22 25.02 19.01 23.93 19.32C21.89 19.79 14.04 19.79 14.04 19.79C14.04 19.79 6.04 19.79 4.16 19.32C3.06 19.01 2.28 18.22 1.96 17.13C1.49 15.09 1.49 11.01 1.49 11.01C1.49 11.01 1.49 6.93 1.81 4.89C2.12 3.79 2.9 3.01 4 2.69C6.04 2.22 13.89 2.22 13.89 2.22C13.89 2.22 21.89 2.22 23.77 2.69ZM12.13 7.58L17.51 10.66C17.78 10.81 17.78 11.2 17.51 11.35L12.13 14.43C11.86 14.58 11.53 14.39 11.53 14.08L11.53 7.93C11.53 7.62 11.86 7.43 12.13 7.58Z" fill="#BABABA" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
