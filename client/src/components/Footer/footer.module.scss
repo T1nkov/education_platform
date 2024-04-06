@@ -1,0 +1,59 @@
+footer {
+  margin: 95px 0 0 0;
+  padding: 40px 0;
+  background: rgb(246, 245, 244);
+  .wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+    .footerTop {
+      display: flex;
+      justify-content: space-between;
+      .leftside {
+        display: flex;
+        gap: 30px;
+      }
+      .rightside {
+        display: flex;
+        gap: 30px;
+      }
+    }
+    .footerDown {
+      margin: 43px 0 0 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .icons {
+        display: flex;
+        gap: 33px;
+        .iconGit {
+          background: url("./assets//git.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 30px;
+          height: 24px;
+        }
+        .iconGT {
+          background: url("./assets//GT.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 30px;
+          height: 24px;
+        }
+        .iconYT {
+          background: url("./assets//YT.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          width: 30px;
+          height: 24px;
+        }
+      }
+      .sert {
+        color: rgb(117, 117, 117);
+        font: 600 12px Montserrat;
+      }
+    }
+  }
+}

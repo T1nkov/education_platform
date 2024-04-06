@@ -1,44 +1,13 @@
-.text {
-  color: rgb(28, 221, 221);
-}
-
-.header {
-  background: rgb(246, 245, 244);
-  display: flex;
-  justify-content: space-between;
-  margin: 24px 0 0 0;
-  
-}
-
-.logo {
-  font: 800 20px Montserrat;
-  display: flex;
-  align-items: center;
-}
-
-.buttons {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-.login {
-  font: 700 16.66px Montserrat;
-}
-
-.signup {
-  font: 700 16.66px Montserrat;
-  color: #fff;
-  padding: 21.28px;
-  background: rgba(43, 120, 139, 1);
-  border-radius: 14.19px;
-}
-
 .main {
   background: rgb(246, 245, 244);
-  padding: 95px 0 0 0;
-  display: flex;
-  justify-content: space-between;
+  padding: 95px 0 123px 0;
+
+  .width {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
   .content {
     width: 500px;
     display: flex;
@@ -63,6 +32,33 @@
       background: rgba(195, 220, 227, 1);
       margin: 32px 0 48px 0;
     }
+    .lightning {
+      display: flex;
+    align-items: center;
+    }
+
+    .lightning p {
+      font: 800 40px Montserrat;
+      color: #000000;
+      
+    }
+    .stud{
+      display: flex;
+      justify-content: center;
+    }
+    .lightning p span {
+      font: 800 40px Montserrat;
+      color: #2b788b;
+    }
+    
+    .light_img {
+      background-image: url("./assets/light.svg");
+      width: 24px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+    }
   }
   .picture {
     background: url("./assets/man.svg");
@@ -75,11 +71,16 @@
 }
 
 .learn {
-  padding: 77px 0 0 0;
+  margin: 77px 0 0 0;
+
   .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
     .picture {
       background: url("./assets/girlM.svg");
       background-repeat: no-repeat;
@@ -129,6 +130,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1220px;
+    margin: 0 auto;
 
     .about {
       display: flex;
@@ -168,6 +171,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
     .picture {
       background: url("./assets/kids.svg");
       background-repeat: no-repeat;
@@ -197,62 +202,6 @@
         padding: 14px 22px 14px 22px;
         border-radius: 100px;
       }
-    }
-  }
-}
-
-footer {
-  margin: 95px 0 0 0;
-  padding: 40px 0;
-  background: rgb(246, 245, 244);
-  .footerTop {
-    display: flex;
-    justify-content: space-between;
-    .leftside {
-      display: flex;
-      gap: 30px;
-    }
-    .rightside {
-      display: flex;
-      gap: 30px;
-    }
-  }
-  .footerDown {
-    margin: 43px 0 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .icons {
-      display: flex;
-      gap: 33px;
-      .iconGit {
-        background: url("./assets//git.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 30px;
-        height: 24px;
-      }
-      .iconGT {
-        background: url("./assets//GT.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 30px;
-        height: 24px;
-      }
-      .iconYT {
-        background: url("./assets//YT.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 30px;
-        height: 24px;
-      }
-    }
-    .sert {
-      color: rgb(117, 117, 117);
-      font: 600 12px Montserrat;
     }
   }
 }

@@ -1,0 +1,43 @@
+.text {
+  color: rgb(28, 221, 221);
+}
+
+.width {
+  width: 1220px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.header {
+  background: rgb(246, 245, 244);
+  border-bottom: 2px solid rgb(212, 209, 205);
+  padding: 24px 0 37px 0;
+}
+
+.logo {
+  font: 800 20px Montserrat;
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.login {
+  font: 700 16.66px Montserrat;
+}
+
+.signup {
+  font: 700 16.66px Montserrat;
+  color: #fff;
+  padding: 13px;
+  background: rgba(43, 120, 139, 1);
+  border-radius: 14.19px;
+}
+
+a {
+  text-decoration: none;
+}
