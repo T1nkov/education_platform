@@ -12,6 +12,7 @@ function Header() {
 
           <Link to="/signUp">
             <div className={style.signup}>Sign Up</div>
+            <h1>Hello</h1>
           </Link>
         </div>
       </div>
