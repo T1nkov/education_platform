@@ -50,7 +50,7 @@ routeCourse.delete("/:id", async (req: Request, res: Response) => {
   }
 });
 
-routeCourse.path(":/id", async (req: Request, res: Response) => {
+routeCourse.patch(":/id", async (req: Request, res: Response) => {
   try {
     const body = req.body;
     const { id } = req.params;

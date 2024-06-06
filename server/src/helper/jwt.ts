@@ -1,8 +1,8 @@
-import jwt from 'jsonwebtoken';
-import { iUser } from '../interfaces/interface';
+import jwt from "jsonwebtoken";
+import { iUser } from "../interfaces/interface";
 
 function createToken(data: iUser[]): string {
-  const secret: string = process.env.JWT_SECRET;
+  const secret: string = "salt";
   return jwt.sign(data[0], secret);
 }
 
